@@ -107,7 +107,7 @@ spec:
     spec:
       containers:
       - image: gcr.io/$PROJECT_ID/$REPO_NAME:$COMMIT_SHA
-        args: ["sleep", "50000"]
+        command: ["web"]
         env:
         - name: KAFKA_BOOTSTRAP_SERVERS
           value: cloudbowl-kafka-bootstrap.kafka:9092

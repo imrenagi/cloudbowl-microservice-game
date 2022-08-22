@@ -102,7 +102,7 @@ spec:
     metadata:
       name: cloudbowl-web-$COMMIT_SHA
       annotations:
-        autoscaling.knative.dev/minScale: "0"
+        autoscaling.knative.dev/minScale: "1"
         autoscaling.knative.dev/maxScale: "10"
     spec:
       containers:

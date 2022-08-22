@@ -110,6 +110,8 @@ spec:
         args:
         - web
         env:
+        - name: PORT
+          value: 8080
         - name: KAFKA_BOOTSTRAP_SERVERS
           value: cloudbowl-kafka-bootstrap.kafka:9092
         - name: WEBJARS_USE_CDN

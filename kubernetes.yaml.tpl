@@ -128,6 +128,6 @@ spec:
               name: cloudbowl-config
         resources:
           limits:
-            cpu: "2"
+            cpu: "1"
             memory: 1Gi
 

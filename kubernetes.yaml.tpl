@@ -108,10 +108,9 @@ spec:
       containers:
       - image: gcr.io/$PROJECT_ID/$REPO_NAME:$COMMIT_SHA
         args:
-        - web
+        - sleep
+        - 500000
         env:
-        - name: PORT
-          value: "8080"
         - name: KAFKA_BOOTSTRAP_SERVERS
           value: cloudbowl-kafka-bootstrap.kafka:9092
         - name: WEBJARS_USE_CDN
@@ -133,3 +132,4 @@ spec:
           limits:
             cpu: "2"
             memory: 1Gi
+
